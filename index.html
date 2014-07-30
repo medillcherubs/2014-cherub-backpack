@@ -316,7 +316,6 @@
     jQuery("a").click(function() {
       var target = $(this).attr("href");
       var offset = $(target).offset().top;
-      console.log(offset);
       pymChild.sendMessage("navigate", offset);
     })
   </script>

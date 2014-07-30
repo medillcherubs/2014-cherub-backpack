@@ -58,12 +58,18 @@
           }
 
           .big {
-              font-size: 30px;
+              font-size: 25px;
               font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
               margin-top: 10px;
               margin-bottom: 10px;
               width: 70%;
+              color: white;
 
+
+          }
+
+          a:hover .big {
+            text-decoration: underline;
           }
 
           h4 {
@@ -110,6 +116,7 @@
             margin-right: auto;
             text-align: justify;
             width: 70%;*/
+            overflow: hidden;
 
           }
 
@@ -134,14 +141,14 @@
           }
 
           .quotelist {
-            width: 33%;
+            width: 50%;
             float: left;
 
           }
 
           .giantquoteL {
             float: left;
-            width: 33%;
+            width: 25%;
             font-family: arial;
             font-size: 400px;
             color: white;
@@ -150,7 +157,7 @@
 
           .giantquoteR {
             float: left;
-            width: 33%;
+            width: 25%;
             font-family: arial;
             font-size: 400px;
             color: white;
@@ -174,6 +181,34 @@
             max-width:100%;
           }
 
+          .student-background {
+            text-align: center;
+            background-color:#f3f9ae;
+          }
+
+
+          .reporter-background {
+            text-align: center;
+            background-color: #fcc3a9;
+          }
+
+          .weekender-background {
+            text-align: center;
+            background-color:#cbe0fe;
+          }
+
+          .mugshot {
+            float: left;
+            width: 32%;
+
+          }
+
+          .mugshot img {
+            max-width: 100%;
+          }
+
+
+
       </style>
     </head>
 <body>
@@ -186,16 +221,22 @@
   <div class= "first">
       <div class= "inner">
       <p class= "summary intro">Class. Campus. Chicago. Three spheres of cherub existence, three separate packing lists. There's the student, who carries his or her supplies to classes and workshops. The reporter, who has to be prepared for anything. And then the weekender, who could be anywhere on campus or in Evanston. Scroll down and take a look at each photo, and hover over the options to see what each cherub brings for the occasion. Then read what other cherubs have to say about their most valuable items and remember one of the most important values of journalism: Always be prepared.</p> 
-      <h4 class= "big">THE STUDENT       THE REPORTER     THE WEEKENDER</h4>
+
+     <a href="#student"> <div class="mugshot"> <img src="Alexa1.png" /> <h4 class= "big">THE STUDENT </h4> </div> </a>
+     <a href="#reporter"> <div class="mugshot"> <img src="David1.png" />  <h4 class= "big"> THE REPORTER </h4> </div> </a>
+     <a href="#weekender"> <div class="mugshot"> <img src="Shereen1.png" /> <h4 class= "big"> THE WEEKENDER</h4> </div> </a>
+               
     </div>
   </div>
 
 
-  <div class= "student">
+  <div id="student" class= "student">
+    <div class= "student-background">
     <img style="max-width:100%" src="http://cdn.thinglink.me/api/image/550830588924264448/1024/10/scaletowidth#tl-550830588924264448;1043138249" class="alwaysThinglink"/><script async charset="utf-8" src="http://cdn.thinglink.me/jse/embed.js"></script>
+  </div>
     <div class= "inner">
       <h3>THE STUDENT</h3>
-      <p class= "summary">With an average of six hours of lecture, workshop and writing a day, a cherub has to come to class prepared. A notebook and writing utensils are instrumental, but if you bring a laptop and phone, don't forget their respective chargers. Add the AP Stylebook you get when you arrive and a folder or two to hold all your papers, and you're ready to learn everything the instructors have to offer. Just don't forget your sweatshirt, or you'll freeze to death in Fisk.</p>
+      <p class= "summary">With an average of six hours of lecture, workshop and writing a day, a cherub has to come to class prepared. A notebook and writing utensils are instrumental, but if you bring a laptop and phone, don't forget their respective chargers. Add an AP Stylebook and a folder or two to hold all your papers, and you're ready to learn everything the instructors have to offer. Just don't forget your sweatshirt, or you'll freeze to death in Fisk.</p>
       <div class= "giantquoteL one">&ldquo;</div>
 
       <div class= "quotelist">
@@ -205,7 +246,7 @@
       <h4>Water bottle</h4>
       <p class="quote">Having a water bottle in the classroom helps me stay more focused on the lesson and less on my hunger and thirst. It keeps me from getting up in the middle of class.</p> 
       <h5>Meredith Sheldon</h5>
-      <h4>Six pairs of headphones</h4>
+      <h4>Lots of headphones</h4>
       <p class= "quote">I always think I'll forget them so I like to have a bunch. They come in handy when I'm listening to audio on the computer or transcribing interviews.</p> 
       <h5>Zach Wingrove</h5>
     </div>
@@ -216,11 +257,13 @@
   </div>
 
 
-  <div class= "reporter">
+  <div id="reporter" class= "reporter">
+  <div class= "reporter-background">
   <img style="max-width:100%" src="http://cdn.thinglink.me/api/image/550834948928438272/1024/10/scaletowidth#tl-550834948928438272;1043138249" class="alwaysThinglink"/><script async charset="utf-8" src="http://cdn.thinglink.me/jse/embed.js"></script>
+  </div>
     <div class= "inner">
       <h3>THE REPORTER</h3>
-      <p class="summary">For interviewing subjects, observing events and taking photos, on-the-go is the way to go. As a reporter, carry a smartphone, a handheld recorder and a reporter's notebook. Bring a snack and gum with you, because you never know how long you'll be out in the field. Helpful tools like a portable charger and hot spot keep technology available for the modern journalist at all times.</p> 
+      <p class="summary">For interviewing subjects, observing events and taking photos, on-the-go is the way to go. As a reporter, carry a smartphone, a handheld recorder and a reporter's notebook. Bring a snack and gum with you, because you never know how long you'll be out in the field. Helpful tools like a portable charger and hotspot keep technology available for the modern journalist at all times.</p> 
 
       <div class= "giantquoteL one">&ldquo;</div>
       <div class= "quotelist">
@@ -239,9 +282,12 @@
  </div>
   </div>     
 
-  <div class= "weekender">
+  <div id="weekender" class= "weekender">
+    <div class= "weekender-background">
     <img style="max-width:100%" src="http://cdn.thinglink.me/api/image/550834732363939840/1024/10/scaletowidth#tl-550834732363939840;1043138249" class="alwaysThinglink"/><script async charset="utf-8" src="http://cdn.thinglink.me/jse/embed.js"></script>
+    </div>
     <div class= "inner">
+    
        <h3>THE WEEKENDER</h3>
       <p class= "summary">With only a 20-minute instructor meeting on your schedule, the weekends provide plenty of time to explore outside the walls of East Fairchild and Fisk Hall. Whole Foods and Chipotle are popular substitutes for the dynamic 1835 Hinman, where mealtimes differ on Sundays. Whether it is the Lakefill or sidewalk sales, cherubs roam the streets of Evanston and discover as much as they can in their five weeks.</p>
 

@@ -306,13 +306,19 @@
       <div class= "giantquoteR two"> &rdquo; </div>
           </div>
   </div>      
-
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="http://cherubs.medill.northwestern.edu/2014/wp-content/themes/medill-cherubs/pym.js"></script>
   <script> 
     var pymChild = new pym.Child();
     setInterval(function() {
       pymChild.sendHeight();
-    }, 500)
+    }, 500);
+    jQuery("a").click(function() {
+      var target = $(this).attr("href");
+      var offset = $(target).offset().top;
+      console.log(offset);
+      pymChild.sendMessage("navigate", offset);
+    })
   </script>
 
 </body>
